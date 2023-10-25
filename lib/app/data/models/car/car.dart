@@ -20,6 +20,7 @@ String toJson(double value){
 class Car with _$Car {
 
   factory Car({
+    required int id,
     @JsonKey(name: 'car') required String brand,
     @JsonKey(name: 'car_model') required String model,
     @JsonKey(name: 'car_color') required String color,
